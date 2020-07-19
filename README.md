@@ -21,7 +21,11 @@ FFMPEG is built as a set of static libraries using *vcpkg* on Windows, macOS and
 * Install *vcpkg* by cloning `https://github.com/microsoft/vcpkg.git` (commit used: `f4bd64233ae875b6b3315fe4fab279335a6adf2b`).
 * Install the recommended dependencies and setup *vcpkg* by running `vcpkg/bootstrap-vcpkg.{sh, bat}`.
 * Replace the content of `vcpkg/ports/ffmpeg` by the content from the `ffmpeg` directory in this repository.
-* Build and export FFMPEG has a set of static libraries for a 64 bits platform:
+* Build FFMPEG has a set of static libraries for a 64 bits platform:
+  - Windows: `vcpkg install ffmpeg:x64-windows-static`
+  - macOS: `vcpkg install ffmpeg:x64-osx`
+  - Ubuntu: `vcpkg install ffmpeg:x64-linux`
+* Export the generated libraries and headers:
   - Windows: `vcpkg export ffmpeg:x64-windows-static --raw`
   - macOS: `vcpkg export ffmpeg:x64-osx --raw`
   - Ubuntu: `vcpkg export ffmpeg:x64-linux --raw`
