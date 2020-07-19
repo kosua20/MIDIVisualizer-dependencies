@@ -12,7 +12,7 @@ Current dependencies:
 
 ### FFMPEG
 
-FFMPEG is built using *vcpkg* on Windows, macOS and Ubuntu, with modified settings. 
+FFMPEG is built as a set of static libraries using *vcpkg* on Windows, macOS and Ubuntu, with modified settings. We generate the LGPL2 version of the library with hardware encoders from Intel and Nvidia disabled, and with no debug symboles. The generated FindFFMPEG.cmake is designed specifically for use in MIDIVisualizer.
 
 * Install *yasm*: 
   - Windows: TBA
