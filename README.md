@@ -16,8 +16,8 @@ FFMPEG is built as a set of static libraries using *vcpkg* on Windows, macOS and
 
 * Install *yasm*: 
   - Windows: TBA
-  - macOS: use Homebrew with `brew install yaml`
-  - Ubuntu: use `sudo apt-get install yaml`
+  - macOS: use Homebrew with `brew install yasm`
+  - Ubuntu: use `sudo apt-get install yasm`
 * Install *vcpkg* by cloning `https://github.com/microsoft/vcpkg.git` (commit used: `f4bd64233ae875b6b3315fe4fab279335a6adf2b`).
 * Install the recommended dependencies and setup *vcpkg* by running `vcpkg/bootstrap-vcpkg.{sh, bat}`.
 * Replace the content of `vcpkg/ports/ffmpeg` by the content from the `ffmpeg` directory in this repository.
