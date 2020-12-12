@@ -34,5 +34,5 @@ FFMPEG is built as a set of static libraries using *vcpkg* on Windows, macOS and
 * Zip the directory, using the following output name:
   - Windows: `ffmpeg-windows-64-static-lgpl.zip`
   - macOS: `ffmpeg-osx-64-static-lgpl.zip`
-  - Ubuntu: `ffmpeg-linux-64-static-lgpl.zip`
+  - Ubuntu : `ffmpeg-ubuntu20-64-static-lgpl.zip` or `ffmpeg-ubuntu18-64-static-lgpl.zip` depending on the version
 * Upload these files in a release on this repository.
